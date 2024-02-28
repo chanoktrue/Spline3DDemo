@@ -30,11 +30,8 @@ struct ContentView: View {
             }
             .buttonStyle(.borderedProminent)
             .tint(.pink)
-    
             
             Spacer()
-            
-            
         }
         
 
@@ -50,10 +47,10 @@ struct Onboard2DView: View {
     var body: some View {
         
         // fetching from cloud
-        let url = URL(string: "https://build.spline.design/WjoaI4Cw2hW7FxY7uFuF/scene.splineswift")!
+//        let url = URL(string: "https://build.spline.design/WjoaI4Cw2hW7FxY7uFuF/scene.splineswift")!
 
         // // fetching from local
-        // let url = Bundle.main.url(forResource: "scene", withExtension: "splineswift")!
+         let url = Bundle.main.url(forResource: "onboard", withExtension: "splineswift")!
 
         try? SplineView(sceneFileURL: url)
     }
